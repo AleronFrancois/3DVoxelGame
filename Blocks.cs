@@ -11,14 +11,18 @@ using OpenTK.Mathematics;
 /// --------------------------------------------
 
 
-public struct BlockInstance
+public class BlockInstance
 {
-    public Matrix4 ModelMatrix;
-    public Vector3 Color;
-    public int Vao;
-    public int Vbo;
-    public int Ebo;
-    public int Texture;
+    public float[] Vertices { get; set; } = Array.Empty<float>();
+    public uint[] Indices { get; set; } = Array.Empty<uint>();
+    public int Vao { get; set; }
+    public int Vbo { get; set; }
+    public int Ebo { get; set; }
+    public int Texture { get; set; }
+    public Matrix4 ModelMatrix { get; set; }
+    public Vector3 Color { get; set; }
+
+    // Constructor and other methods...
 }
 
 

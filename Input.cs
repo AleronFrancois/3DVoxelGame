@@ -50,7 +50,7 @@ public class HandleUserInput
 
 
 
-    public void WindowKeys(KeyboardState keyboard)
+    public void WindowKeys(ref Renderer.Camera camera, KeyboardState keyboard)
     {
         // Close window
         if (keyboard.IsKeyDown(Keys.Escape)) renderer.Close();
@@ -61,6 +61,14 @@ public class HandleUserInput
             if (renderer.CursorState == CursorState.Grabbed) renderer.CursorState = CursorState.Normal;
             else renderer.CursorState = CursorState.Grabbed;
             
+        }
+
+        // Reset camera position
+        if (keyboard.IsKeyPressed(Keys.D3)) 
+        {
+            camera.Position = new Vector3(0, 0, 5); 
+            camera.Yaw = -90.0f;
+            camera.Pitch = 0.0f;
         }
     }
 

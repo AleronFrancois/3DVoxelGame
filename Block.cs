@@ -67,7 +67,7 @@ public static class BlockMesh
 
 
     public static (int VAO, int VBO, int EBO, int texture) CreateBlock(string textureFilePath)
-    {
+    {   
         // Generate OpenGL objects
         int vao = GL.GenVertexArray();
         int vbo = GL.GenBuffer();

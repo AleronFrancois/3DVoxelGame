@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("3DVoxelEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f0ab94884cf9d8bfa3a5130d6404fdba80467a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4820491b9f482d1c2d1a05aacc505df305e3bb02")]
 [assembly: System.Reflection.AssemblyProductAttribute("3DVoxelEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("3DVoxelEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
