@@ -49,6 +49,8 @@ class Shader
         return shaderProgram;
     }
 
+
+
     private int CompileShader(ShaderType type, string source) 
     {
         int shader = GL.CreateShader(type);

@@ -1,6 +1,6 @@
 ﻿using OpenTK.Windowing.Desktop;
 using OpenTK.Mathematics;
-namespace My3DEngine;
+
 
 /// ---------------3D Game Engine---------------
 /// 
@@ -20,7 +20,7 @@ public class Program
 
         using (var renderer = new Renderer(windowSettings, nativeWindowSettings))
         {
-            renderer.Run(); // Load 3D engine
+            renderer.Run();
         }
     }
 }
