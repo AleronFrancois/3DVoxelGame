@@ -6,7 +6,7 @@
     <RootNamespace>3DVoxelEngine</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <NoWarn>CS0618;CA1416;</NoWarn>
+    <NoWarn>CS0618;CA1416;CS0414;</NoWarn>
 
   </PropertyGroup>
 

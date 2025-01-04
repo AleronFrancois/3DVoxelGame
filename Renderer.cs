@@ -42,8 +42,9 @@ public class Renderer : GameWindow
     private int combinedEbo;
 
     private Vector3 lastChunkPosition = Vector3.Zero; // Last chunk position for chunk generation
-    private bool initialChunkGenerated = false; // Initial chunk generation flag
-    private HashSet<Vector3> generatedChunks = new HashSet<Vector3>();
+    private HashSet<Vector3> generatedChunks = new HashSet<Vector3>(); // Track generated chunks
+    private bool initialChunkGenerated = false; // Track if the initial chunk has been generated
+    private int chunkCount = 0; // Chunk count for debugging
 
     
 
@@ -53,7 +54,7 @@ public class Renderer : GameWindow
         // Initialise camera settings
         camera = new Camera
         {
-            Position = new Vector3(2, 5, 2), // Adjust initial position to be above the center of the chunk
+            Position = new Vector3(0, 0, 0), 
             Front = new Vector3(0, 0, -1),
             Up = new Vector3(0, 1, 0),
             Speed = 0.001f,
@@ -87,17 +88,15 @@ public class Renderer : GameWindow
         //this.VSync = VSyncMode.On; // Enable VSync
         
         //blocks.AddGrassBlock(new Vector3(1, 0, -5), new Vector3(1, 1, 1), new Vector3(0.6f, 0f, 0.6f));
-        //blocks.AddStoneBlock(new Vector3(2, 0, -5), new Vector3(1, 1, 1), new Vector3(0.6f, 0f, 0.6f));
+        blocks.AddStoneBlock(new Vector3(0, 0, 0), new Vector3(1, 1, 1), new Vector3(0.6f, 0f, 0.6f));
     }
 
 
 
-    
-
     private void ChunkSystem(Vector3 cameraPosition)
     {
         int chunkSizeX = 4; // Define the chunk size for X
-        int chunkSizeZ = 4; // Define the chunk size for Z
+        int chunkSizeZ = 4; // Define the chunk size for Z;
 
         // Calculate the chunk position based on the camera's X and Z coordinates, lock Y coordinate to 0
         int chunkX = (int)Math.Floor(cameraPosition.X / chunkSizeX) * chunkSizeX;
@@ -108,12 +107,14 @@ public class Renderer : GameWindow
 
         // Only generate a new chunk if the camera has moved to a new chunk grid position
         if (!generatedChunks.Contains(currentChunkPosition))
-        {
+        {   
             GenerateChunk(currentChunkPosition);
             generatedChunks.Add(currentChunkPosition);
             lastChunkPosition = currentChunkPosition;
             initialChunkGenerated = true;
-            Console.WriteLine($"Chunk generated at: ({chunkX}, {chunkY}, {chunkZ})");
+
+            chunkCount++;
+            Console.Write($"\rChunks generated: {chunkCount}");
         }
     }
 
@@ -136,7 +137,6 @@ public class Renderer : GameWindow
             }
         }
     }
-
 
 
 

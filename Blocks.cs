@@ -46,7 +46,7 @@ public class Blocks
     public void AddGrassBlock(Vector3 position, Vector3 scale, Vector3 color, string? texturePath = null)
     {
         // Texture path
-        string TexturePath = @"C:\Users\Aleron\Documents\3DVoxelGame\Textures\Grass.jpg";
+        string TexturePath = @"C:\Users\Aleron\Documents\3DVoxelEngine\Textures\Sand.jpg";
 
         // Create the block mesh
         var (vao, vbo, ebo, texture) = BlockMesh.CreateBlock(TexturePath);
@@ -71,7 +71,7 @@ public class Blocks
     public void AddStoneBlock(Vector3 position, Vector3 scale, Vector3 color, string? texturePath = null)
     {
         // Texture path
-        string TexturePath = @"C:\Users\Aleron\Documents\3DVoxelGame\Textures\Stone.png";
+        string TexturePath = @"C:\Users\Aleron\Documents\3DVoxelEngine\Textures\Stone.png";
 
         // Create the block mesh
         var (vao, vbo, ebo, texture) = BlockMesh.CreateBlock(TexturePath);

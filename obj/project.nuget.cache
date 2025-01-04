@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "56h7cNuB7sQ=",
+  "dgSpecHash": "mr7TULuQu0w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aleron\\Documents\\3DVoxelGame\\3DVoxelEngine.csproj",
+  "projectFilePath": "C:\\Users\\Aleron\\Documents\\3DVoxelEngine\\3DVoxelEngine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aleron\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.0\\microsoft.win32.systemevents.9.0.0.nupkg.sha512",
     "C:\\Users\\Aleron\\.nuget\\packages\\opentk\\4.9.3\\opentk.4.9.3.nupkg.sha512",
@@ -17,7 +17,11 @@
     "C:\\Users\\Aleron\\.nuget\\packages\\opentk.windowing.desktop\\4.9.3\\opentk.windowing.desktop.4.9.3.nupkg.sha512",
     "C:\\Users\\Aleron\\.nuget\\packages\\opentk.windowing.graphicslibraryframework\\4.9.3\\opentk.windowing.graphicslibraryframework.4.9.3.nupkg.sha512",
     "C:\\Users\\Aleron\\.nuget\\packages\\system.drawing.common\\9.0.0\\system.drawing.common.9.0.0.nupkg.sha512",
-    "C:\\Users\\Aleron\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\Aleron\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Aleron\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\Aleron\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\Aleron\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\Aleron\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.11\\microsoft.netcore.app.host.win-x64.8.0.11.nupkg.sha512"
   ],
   "logs": []
 }
